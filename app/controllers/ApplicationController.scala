@@ -27,8 +27,8 @@ class ApplicationController @Inject()(
   }
 
   def restart(): Action[AnyContent] = Action { implicit requestHeader: RequestHeader =>
-//    val result = environment.getFile("/shell/restart.sh").getAbsolutePath.!!
-    Ok(indexTemplate(Some(environment.getFile("/shell/restart.sh").getAbsolutePath)))
+    val result = environment.getFile("/shell/restart.sh").getAbsolutePath.!!
+    Ok(indexTemplate(Some(result)))
   }
 
   def worldConfig(id: Int): Action[AnyContent] = Action { implicit requestHeader: RequestHeader =>
@@ -48,7 +48,7 @@ class ApplicationController @Inject()(
         printToFile(file) { printWriter =>
           printWriter.print(worldConfig.value)
         }
-        "./shell/sync_world_config.sh".!!
+        environment.getFile("/shell/sync_world_config.sh").getAbsolutePath.!!
         Redirect(routes.ApplicationController.worldConfig(id))
       }
     )
@@ -76,7 +76,7 @@ class ApplicationController @Inject()(
           printWriter.print(modConfig.overrides)
         }
 
-        "./shell/sync_mod_config.sh".!!
+        environment.getFile("/shell/sync_mod_config.sh").getAbsolutePath.!!
         Redirect(routes.ApplicationController.modConfig())
       }
     )
