@@ -1,0 +1,15 @@
+@this(assetsFinder: AssetsFinder, main: views.html.Main)
+@(executeResult: Option[String] = None)(implicit requestHeader: RequestHeader, messagesProvider: MessagesProvider)
+
+    @main() {
+        <h3>饥荒服务器配置</h3>
+        <a href="@routes.ApplicationController.restart()">重启</a>
+
+        @if(executeResult.nonEmpty) {
+            <h4>结果</h4>
+            <div>
+            @play.twirl.api.HtmlFormat.raw(executeResult.getOrElse("").replace("\n","<br/>"))
+            </div>
+        }
+
+    }

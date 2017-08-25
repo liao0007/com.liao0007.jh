@@ -1,0 +1,11 @@
+@this(assetsFinder: AssetsFinder, main: views.html.Main)
+@(modConfigForm: Form[forms.ModConfig])(implicit requestHeader: RequestHeader, messagesProvider: MessagesProvider)
+
+@main() {
+    <h3>Mod配置</h3>
+    @helper.form(helper.CSRF(routes.ApplicationController.modUpdate())) {
+        @helper.textarea(modConfigForm("setup"))
+        @helper.textarea(modConfigForm("overrides"))
+        <input type="submit" value="保存">
+    }
+}

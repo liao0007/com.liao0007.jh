@@ -1,0 +1,14 @@
+.menu {
+    width: 300px;
+    float: left;
+}
+
+.content {
+    float: left;
+    min-width: 500px;
+}
+
+textarea {
+    width: 100%;
+    min-height:400px;
+}

@@ -1,0 +1,10 @@
+GET         /                    controllers.ApplicationController.index()
+GET         /restart             controllers.ApplicationController.restart()
+
+GET         /world/:id           controllers.ApplicationController.worldConfig(id: Int)
+POST        /world/:id           controllers.ApplicationController.worldUpdate(id: Int)
+
+GET         /mod                 controllers.ApplicationController.modConfig()
+POST        /mod                 controllers.ApplicationController.modUpdate()
+
+GET         /assets/*file        controllers.Assets.versioned(file)

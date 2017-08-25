@@ -1,0 +1,15 @@
+@this(assetsFinder: AssetsFinder, main: views.html.Main)
+@(worldConfigForm: Form[forms.WorldConfig], worldId: Int, worldCount: Int)(implicit requestHeader: RequestHeader, messagesProvider: MessagesProvider)
+
+    @main() {
+        <h3>世界配置</h3>
+        @helper.form(helper.CSRF(routes.ApplicationController.worldUpdate(worldId))) {
+            <select id="world-select">
+            @for(index <- 1 to worldCount) {
+                <option value=@index @if(index == worldId) {selected}>世界@index</option>
+            }
+            </select>
+            @helper.textarea(worldConfigForm("value"))
+            <input type="submit" value="保存">
+        }
+    }
