@@ -27,8 +27,8 @@ class ApplicationController @Inject()(
   }
 
   def restart(): Action[AnyContent] = Action { implicit requestHeader: RequestHeader =>
-    val result = "./shell/restart.sh".!!
-    Ok(indexTemplate(Some(result)))
+//    val result = (environment.rootPath.getAbsolutePath + "/shell/restart.sh").!!
+    Ok(indexTemplate(Some(environment.rootPath.getAbsolutePath)))
   }
 
   def worldConfig(id: Int): Action[AnyContent] = Action { implicit requestHeader: RequestHeader =>
