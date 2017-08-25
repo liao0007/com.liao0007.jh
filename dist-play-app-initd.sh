@@ -76,7 +76,7 @@ COMMAND=$1
 # *************  Set these variables  ***********
 
 NAME=com-liao0007-jh
-PORT=8080
+PORT=9001
 APP_DIR=/var/www/com-liao0007-jh-1.0-SNAPSHOT
 
 # ***********************************************
