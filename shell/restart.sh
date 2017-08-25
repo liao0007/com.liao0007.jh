@@ -1,5 +1,4 @@
 #!/bin/bash
-
 steamcmd_dir="$HOME/steamcmd"
 install_dir="$HOME/dontstarvetogether_dedicated_server"
 cluster_name="MyDediServer"
