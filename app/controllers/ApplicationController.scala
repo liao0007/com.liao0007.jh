@@ -90,6 +90,7 @@ class ApplicationController @Inject()(
         val source = scala.io.Source.fromFile(file)
         try source.mkString finally source.close()
       case _ =>
+        scala.reflect.io.File(environment.getFile(filePath)).createDirectory()
         scala.reflect.io.File(environment.getFile(filePath)).createFile()
         ""
     }
