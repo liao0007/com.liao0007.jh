@@ -7,6 +7,5 @@ scp $1/uploaded/leveldataoverride_2.lua /root/.klei/DoNotStarveTogether/MyDediSe
 scp $1/uploaded/leveldataoverride_3.lua /root/.klei/DoNotStarveTogether/MyDediServer/Slave02/leveldataoverride.lua
 scp $1/uploaded/leveldataoverride_4.lua /root/.klei/DoNotStarveTogether/MyDediServer/Slave03/leveldataoverride.lua
 scp $1/uploaded/leveldataoverride_5.lua /root/.klei/DoNotStarveTogether/MyDediServer/Slave04/leveldataoverride.lua
-
-scp $1/uploaded/leveldataoverride_6.lua root@lab.youleligou.com:/root/.klei/DoNotStarveTogether/MyDediServer/Slave01/leveldataoverride.lua
-scp $1/uploaded/leveldataoverride_7.lua root@lab.youleligou.com:/root/.klei/DoNotStarveTogether/MyDediServer/Slave02/leveldataoverride.lua
+scp $1/uploaded/leveldataoverride_6.lua /root/.klei/DoNotStarveTogether/MyDediServer/Slave05/leveldataoverride.lua
+scp $1/uploaded/leveldataoverride_7.lua /root/.klei/DoNotStarveTogether/MyDediServer/Slave06/leveldataoverride.lua

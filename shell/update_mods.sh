@@ -7,4 +7,3 @@ run_shared+=(-cluster "$cluster_name")
 run_shared+=(-only_update_server_mods)
 
 "${run_shared[@]}"
-ssh root@lab.youleligou.com "${run_shared[@]}"
