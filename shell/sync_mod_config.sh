@@ -9,5 +9,3 @@ scp $1/uploaded/modoverrides.lua /root/.klei/DoNotStarveTogether/MyDediServer/Sl
 scp $1/uploaded/modoverrides.lua /root/.klei/DoNotStarveTogether/MyDediServer/Slave02/
 scp $1/uploaded/modoverrides.lua /root/.klei/DoNotStarveTogether/MyDediServer/Slave03/
 scp $1/uploaded/modoverrides.lua /root/.klei/DoNotStarveTogether/MyDediServer/Slave04/
-scp $1/uploaded/modoverrides.lua /root/.klei/DoNotStarveTogether/MyDediServer/Slave05/
-scp $1/uploaded/modoverrides.lua /root/.klei/DoNotStarveTogether/MyDediServer/Slave06/
