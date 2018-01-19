@@ -20,7 +20,7 @@ class ApplicationController @Inject()(
   val modSetupFilePath = "uploaded/dedicated_server_mods_setup.lua"
   val modOverridesFilePath = "uploaded/modoverrides.lua"
   val worldFilePathTemplate = "uploaded/leveldataoverride_#.lua"
-  val worldCount = 7
+  val worldCount = 2
 
   def index(): Action[AnyContent] = Action { implicit requestHeader: RequestHeader =>
     Ok(indexTemplate())
