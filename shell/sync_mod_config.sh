@@ -1,7 +1,7 @@
 #!/bin/bash
 # $1 = play environment root path
 
-scp $1/uploaded/dedicated_server_mods_setup.lua /root/dontstarvetogether_dedicated_server/mods/dedicated_server_mods_setup.lua
+scp $1/uploaded/dedicated_server_mods_setup.lua /root/dst/dontstarvetogether_dedicated_server/mods/dedicated_server_mods_setup.lua
 
 #sync mod config
 scp $1/uploaded/modoverrides.lua /root/.klei/DoNotStarveTogether/MyDediServer/Master/

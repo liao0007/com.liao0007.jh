@@ -2,8 +2,8 @@
 
 # $1 = play environment root path
 
-steamcmd_dir="$HOME/steamcmd"
-install_dir="$HOME/dontstarvetogether_dedicated_server"
+steamcmd_dir="$HOME/dst/steamcmd"
+install_dir="$HOME/dst/dontstarvetogether_dedicated_server"
 cluster_name="MyDediServer"
 dontstarve_dir="$HOME/.klei/DoNotStarveTogether"
 
