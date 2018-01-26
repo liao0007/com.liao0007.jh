@@ -14,4 +14,4 @@ $1/shell/sync_mod_config.sh $1
 $1/shell/sync_world_config.sh $1
 
 screen -S dst -p 0 -X quit
-screen -S dst -d -m /root/run_dedicated_servers.sh
+screen -S dst -d -m /root/dst/run_dedicated_servers.sh
